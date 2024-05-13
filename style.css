@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    /* height: 100vh; */
+  
+    padding: 0px;
+    width: 100vw;
+   /* margin-left: 200px; */
+}
+.input-field{
+
+    margin-left: 100px;
+}
+.input-field{
+    padding: 10px;
+}
+.container form {
+    padding-top: 20px;
+}
+.input-field label{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 120px;
+}
+.input-field label.gender::after{
+content: "";
+}
+ #it{
+    font-size: 200px;
+}
+.input-field label::after{
+    content: ":";
+}
+.input-field input[type=text], input[type=email], input[type=number], input[type=select], input[type=date],input[type=select],input[type=password], input[type=tel]
+{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+textarea,select{
+    width:60%;
+    padding: 12px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+.input-field.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-field.buttons input[type="submit"],
+.input-field.buttons input[type="reset"] {
+    width: 30%;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-field.buttons input[type="submit"]:hover,
+.input-field.buttons input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+.input-field input[type="checkbox"] {
+    transform: scale(1.2);
+    margin: 5px; 
+}
+.input-field select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.table {
+    margin: 10px auto;
+    width: 80%;
+    
+}
+form{
+    background-color:rgb(41, 17, 62) ;
+}
+form label{
+    color: yellow;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: start;
+}
+ h1 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: yellow;
+    padding: 0px 0px 0px 10px;
+}
+.input-field:nth-child(1){
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: yellow; 
+    width: 100%; 
+    align-items: end;
+    padding: 10px;
+    /* float: right; */
+    text-align: right;
+    /* width: 80%; */
+    margin: auto;
+    padding-right: 120px;
+    gap: 10px;
+    
+}
+
+
+input[type="submit"]{
+    padding: 8px 8px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+input[type="reset"]{
+    padding: 8px 8px;
+    background-color: rgb(128, 17, 0);
+    color: white;
+    border: 1px solid rgb(128, 17, 0);
+    border-radius: 8px;
+
+}
+.error{
+    color: red;
+}

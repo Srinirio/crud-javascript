@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="readAll()">
+    <div class="container">
+      <h1>sign up</h1>
+      <form action="" id="myForm">
+        <div class="input-field">
+          <label for="name">first name</label>
+          <input type="text" name="name" id="name" />
+          <div class="error" id="nameError"></div>
+        </div>
+        <div class="input-field">
+          <label for="last name">last Name</label>
+          <input type="text" name="last-name" id="last-name" />
+          <div class="error" id="lastNameError"></div>
+        </div>
+        <div class="input-field">
+          <label for="dob">date od birth</label>
+          <input type="date" name="dob" id="dob" />
+          <div class="error" id="dobError"></div>
+        </div>
+        <div class="input-field">
+          <label for="gender">gender</label>
+
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male" class="gender">male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female" class="gender">female</label>
+          <div class="error" id="genderError"></div>
+        </div>
+
+        <div class="input-field">
+          <label for="country">country</label>
+          <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Thailand">Thailand</option>
+          </select>
+          <div class="error" id="countryError"></div>
+        </div>
+
+        <div class="input-field">
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="input-field">
+          <label for="number">mobile number</label>
+          <input type="tel" name="number" id="number" />
+          <div class="error" id="numberError"></div>
+        </div>
+        <div class="input-field">
+          <label for="interest">Interest</label>
+          <input type="checkbox" name="java" id="java" value="java" />
+          <span style="color: yellow">Java</span>
+          <input type="checkbox" name="python" id="python" value="python" />
+          <span style="color: yellow">Python</span>
+          <input type="checkbox" name="html" id="html" value="html" />
+          <span style="color: yellow">HTML</span>
+          <input type="checkbox" name="css" id="css" value="css" />
+          <span style="color: yellow">CSS</span>
+          <input
+            type="checkbox"
+            name="javascript"
+            id="javascript"
+            value="javascript"
+          />
+          <span style="color: yellow">JavaScript</span>
+          <div class="error" id="interestError"></div>
+        </div>
+        <div class="input-field">
+          <label for="pass">password</label>
+          <input type="password" name="pass" id="pass" />
+          <div class="error" id="passError"></div>
+        </div>
+        <div class="input-field">
+          <label for="confirm-pass">confirm password</label>
+          <input type="password" name="confirm-pass" id="confirm-pass" />
+          <div class="error" id="confirmPassError"></div>
+        </div>
+        <div class="input-field">
+          <label for="file">Upload File</label>
+          <input type="file" name="file" id="file" style="color: yellow;"/>
+          <div class="error" id="fileError"></div>
+        </div>
+        <div class="btn">
+          <input type="submit" id="btn-submit" />
+          <input type="reset" id="btn-reset" />
+        </div>
+      </form>
+    </div>
+
+    <section style="width: 100%">
+      <div class="table">
+        <table id="table">
+          <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>Password</th>
+            <th>Country</th>
+            <th>Interest</th>
+            <th>File</th>
+            <th>Action</th>
+          </thead>
+          <tbody class="data_table">
+
+          </tbody>
+          <!-- <th>File</th> -->
+        </table>
+      </div>
+    </section>
+ 
+  </body>
+</html>
